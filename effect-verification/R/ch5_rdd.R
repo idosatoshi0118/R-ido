@@ -16,7 +16,7 @@ male_data <- email_data %>%
 threshold_value <- 5.5
 
 ## ルールによる介入を再現したデータを作成
-## cut-offよりrunning variableが大きければが配信されたデータのみ残す
+## cut-offよりrunning variableが大きければ配信されたデータのみ残す
 ## 逆の場合には配信されなかったデータのみ残す
 ## running variableを0.1単位で区切ったグループわけの変数も追加しておく
 rdd_data <- male_data %>%
